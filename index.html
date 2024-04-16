@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <h1>Personal Library Hall of Fame</h1>
+    <table class="table">
+        <tr id="header-row">
+            <th class="title-header">Title</th>
+            <th class="author-header">Author</th>
+            <th class="pages-header">Pages</th>
+            <th classs="read-header">Ever read?</th>
+        </tr>
+        <tr>
+            <td class="title-row">Life of Pi</td>
+            <td class="author-row">Yann Martel</td>
+            <td class="pages-row">354</td>
+            <td class="read-row">Yes</td>
+        </tr>
+    </table>
+    <button class="new-book-btn">NEW BOOK</button>
+    <dialog class="modal">
+        <form action="post">
+            <label for="title-input">Title</label>
+            <input type="text" id="title-input" placeholder="The Great Gatsby">
+            <label for="author-input">Author</label>
+            <input type="text" id="author-input" placeholder="F Scott Fitzgerald">
+            <label for="pages-input">Pages</label>
+            <input type="text" id="pages-input" placeholder="297">
+            <button class="submit-btn">Submit</button>
+        </form>
+        <button class="close-btn">Close</button>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
